@@ -1,0 +1,61 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>9b2ac6da-9ae9-4d9e-ac15-ec337f12f8e5</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>app.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Py_Vector_List</Name>
+    <RootNamespace>Py_Vector_List</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="benchmark\convnet.py" />
+    <Compile Include="benchmark\runner.py" />
+    <Compile Include="benchmark\__init__.py" />
+    <Compile Include="configs.py" />
+    <Compile Include="Py_Vector_List.py" />
+    <Compile Include="utils\argparser.py" />
+    <Compile Include="utils\helper.py" />
+    <Compile Include="utils\mnist_reader.py" />
+    <Compile Include="utils\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="benchmark\" />
+    <Folder Include="benchmark\__pycache__\" />
+    <Folder Include="utils\" />
+    <Folder Include="utils\__pycache__\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="benchmark\baselines.json" />
+    <Content Include="benchmark\__pycache__\runner.cpython-37.pyc" />
+    <Content Include="benchmark\__pycache__\__init__.cpython-37.pyc" />
+    <Content Include="utils\__pycache__\argparser.cpython-37.pyc" />
+    <Content Include="utils\__pycache__\helper.cpython-37.pyc" />
+    <Content Include="utils\__pycache__\mnist_reader.cpython-37.pyc" />
+    <Content Include="utils\__pycache__\__init__.cpython-37.pyc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

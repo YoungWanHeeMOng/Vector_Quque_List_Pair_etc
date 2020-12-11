@@ -1,0 +1,2 @@
+{"done_time": 1606767298, "mean_accuracy": 0.807, "name": "PassiveAggressiveClassifier", "num_repeat": 2, "parameter": {"C": 1.0}, "score": [0.81, 0.804], "start_time": 1606767265, "std_accuracy": 0.006000000000000005, "time_per_repeat": 16}
+{"done_time": 1606767333, "mean_accuracy": 0.80965, "name": "PassiveAggressiveClassifier", "num_repeat": 2, "parameter": {"C": 100.0}, "score": [0.8109, 0.8084], "start_time": 1606767298, "std_accuracy": 0.0024999999999999467, "time_per_repeat": 17}
