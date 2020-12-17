@@ -75,7 +75,10 @@
     <ClCompile Include="DrivedClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="memscan.c">
+    <ClCompile Include="memscan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="function.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
